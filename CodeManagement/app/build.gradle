@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: "kotlin-kapt"
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+    buildFeatures {
+        dataBinding true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.matdata"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file("key.jks")
+            storePassword "com.matdata"
+            keyAlias "com.matdata"
+            keyPassword "com.matdata"
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def project = "matdata"
+            def separator = "_"
+            def buildType = variant.buildType.name
+            def versionName = variant.versionName
+            def versionCode = variant.versionCode
+            def date = new Date()
+            def formattedDate = date.format('yyyy_MM_dd')
+            if (variant.buildType.name == "release") {
+                def newApkName = project + separator + "v" + versionName + separator + versionCode + separator + buildType + separator + formattedDate + ".apk"
+                output.outputFileName = newApkName
+            }
+            if (variant.buildType.name == "debug") {
+                def newApkName = project + separator + "v" + versionName + separator + versionCode + separator + buildType + ".apk"
+                output.outputFileName = newApkName
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+}
+
+ext {
+    androidSupportVersion = '28.0.0'
+    playServicesVersion = '17.0.0'
+    playServicesAuthVersion = '20.4.1'
+    firebaseVersion = '23.1.1'
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation "com.google.firebase:firebase-messaging:$firebaseVersion"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation "com.google.android.gms:play-services-places:$playServicesVersion"
+    implementation 'com.facebook.android:facebook-android-sdk:6.3.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'jp.wasabeef:glide-transformations:4.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'cz.msebera.android:httpclient:4.5.8'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation project(':restful-api-client')
+
+}
+//apply plugin: 'com.google.gms.google-services'

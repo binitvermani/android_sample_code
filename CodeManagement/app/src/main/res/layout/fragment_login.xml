@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="handleClick"
+            type="com.matdata.utils.ClickHandler" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDustyWhite">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/verify_your_mobile_number"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_18ssp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:gravity="start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subtitleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/an_otp_will_be_send_on_the_mentioned_mob_number_to_verify_the_user"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintEnd_toEndOf="@id/titleTV"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/flagLogoIV"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_indian_flag"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/subtitleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countryCodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_44sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="+91"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_16ssp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:includeFontPadding="false"
+            android:imeOptions="actionNext"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/flagLogoIV"
+            app:layout_constraintTop_toTopOf="@id/flagLogoIV"
+            app:layout_constraintBottom_toBottomOf="@id/flagLogoIV"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mobileNumberET"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_44sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_16ssp"
+            android:includeFontPadding="false"
+            android:cursorVisible="true"
+            app:layout_constraintEnd_toEndOf="@id/titleTV"
+            app:layout_constraintStart_toEndOf="@id/countryCodeTV"
+            app:layout_constraintTop_toTopOf="@id/flagLogoIV"
+            app:layout_constraintBottom_toBottomOf="@id/flagLogoIV"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getOtpBT"
+            style="@style/activeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:gravity="center"
+            android:onClick="@{(View) -> handleClick.onHandleClick(View)}"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/get_otp"
+            android:textColor="@color/Black"
+            android:background="@drawable/bg_inactive_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/flagLogoIV"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

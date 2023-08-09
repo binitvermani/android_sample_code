@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="_5dp">4.00dp</dimen>
+    <dimen name="_15dp">12.00dp</dimen>
+    <dimen name="_25dp">20.00dp</dimen>
+
+    <dimen name="_280dp">224.00dp</dimen>
+
+    <dimen name="_14sp">11.20sp</dimen>
+    <dimen name="_18sp">14.40sp</dimen>
+</resources>

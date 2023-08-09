@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llVoters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:background="@color/White">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Name"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:text="F"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:text="50"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="@string/sr_no"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblsrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="16sp"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="@string/part_number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblpartno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="@string/panchayat_area"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblwardno"
+                android:layout_width="wrap_content"
+                android:layout_height="16sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="4dp"
+                android:text="Ward No : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblmobile"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="10dp"
+                android:text="9815098150"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_11ssp"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/llAll"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/colorLightGray" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

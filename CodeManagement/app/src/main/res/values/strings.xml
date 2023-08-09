@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<resources>
+
+    <string name="app_name">CODE Management</string>
+    <string name="powered_by">Powered By: CODE Management@96256-01110</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="an_otp_will_be_send_on_the_mentioned_mob_number_to_verify_the_user">An OTP will be send on the mentioned mobile number to verify the user.</string>
+    <string name="verify_your_mobile_number">Verify your Mobile Number</string>
+    <string name="activate">Activate</string>
+    <string name="please_provide_activation_code_password">Please Provide Activation Code/Password</string>
+
+    <string name="voter_search_home">Voter Search</string>
+    <string name="main_form_res">Main Form Respondent</string>
+    <string name="imp_people">Importnat People</string>
+    <string name="main_form">Main Form</string>
+    <string name="opinion_poll">Opnion Poll</string>
+    <string name="voter_sheet">Voter Sheet</string>
+    <string name="printing_home">Print</string>
+    <string name="contact_home">Contact Number</string>
+    <string name="cast_wise_home">Caste Data</string>
+    <string name="voting_home">Vote</string>
+    <string name="synch_home">Update</string>
+
+    <!--Settings-->
+    <string name="tour_program">View tour schedule</string>
+    <string name="development_work">See publication</string>
+    <string name="user_permission">Give permission to the user</string>
+    <string name="app_last_use">View the last usage of the app</string>
+    <string name="work_progress">Work progress</string>
+    <string name="see_birthday">See birthday</string>
+    <string name="app_permission">Give permission to the app</string>
+    <string name="message_header_footer">Update message header footer</string>
+    <string name="update_matdan_time">Update polling time</string>
+    <string name="change_app_language">Change App Language</string>
+
+    <string name="village_panchayat_area">Village/Panchayat/Area</string>
+    <string name="name_father_relative_surname">Name/Father/Husband/Surname</string>
+    <string name="part_number">Part no. :</string>
+    <string name="saral_kramank">Simple number :</string>
+    <string name="search">Search</string>
+    <string name="data_sync">Synchronize Data</string>
+    <string name="from">From</string>
+    <string name="date">Date</string>
+    <string name="to">To</string>
+    <string name="polling_booth_details">Polling Station Information</string>
+
+    <string name="cast_wise_figur_h">जातिगत आकड़ा</string>
+    <string name="vidhansabha_h">विधानसभा</string>
+    <string name="area_wise_h">क्षेत्र के आधार पर</string>
+    <string name="message_update_h">मैसेज अपडेटे</string>
+
+<!--    <string name="voter_search_home">मतदाता खोजें</string>-->
+<!--    <string name="printing_home">प्रिंट करें</string>-->
+<!--    <string name="contact_home">संपर्क क्रमांक</string>-->
+<!--    <string name="cast_wise_home">जातिगत आंकड़ा</string>-->
+<!--    <string name="voting_home">मतदान</string>-->
+<!--    <string name="synch_home">अपडेट करें</string>-->
+
+<!--    <string name="tour_program">दौरा कार्यक्रम देखें</string>-->
+<!--    <string name="development_work">विकाश कार्य देखे</string>-->
+<!--    <string name="user_permission">यूजर को परमिशन देवे</string>-->
+<!--    <string name="app_last_use">एप्प का अंतिम प्रयोग देखे</string>-->
+<!--    <string name="work_progress">कार्य की प्रगति</string>-->
+<!--    <string name="see_birthday">जन्म दिन देंखे</string>-->
+<!--    <string name="app_permission">एप्प को परमिशन देवे</string>-->
+<!--    <string name="message_header_footer">मैसेज हेडर फुटर अपडेट करे</string>-->
+<!--    <string name="update_matdan_time">मतदान का समय अपडेट करे</string>-->
+<!--    <string name="change_app_language">ऐप की भाषा बदलें</string>-->
+
+<!--    <string name="village_panchayat_area">ग्राम/पंचायत/क्षेत्र</string>-->
+<!--    <string name="name_father_relative_surname">नाम/पिता/पति/सरनेम</string>-->
+<!--    <string name="part_number">भाग संख्या :</string>-->
+<!--    <string name="saral_kramank">सरल क्रमांक :</string>-->
+<!--    <string name="search">सर्च करें</string>-->
+
+<!--    <string name="total_voters_home">कुल मतदाता-0</string>-->
+    <string name="total_voters_home">Total Voters-0</string>
+    <string name="home">Home</string>
+<!--    <string name="suchi_dekhen">सूची देखें</string>-->
+    <string name="suchi_dekhen">See the list</string>
+<!--    <string name="surname">सरनेम :</string>-->
+    <string name="surname">Surname :</string>
+<!--    <string name="cast">जाति :</string>-->
+    <string name="cast">Cast :</string>
+<!--    <string name="sex">लिंग :</string>-->
+    <string name="sex">Sex :</string>
+<!--    <string name="house_no">म.क्र. :</string>-->
+    <string name="house_no">H.no. :</string>
+<!--    <string name="mobile">मोबाइल :</string>-->
+    <string name="mobile">Mobile :</string>
+<!--    <string name="remark">रिमार्क</string>-->
+    <string name="remark">Remark :</string>
+<!--    <string name="priority">प्रायोरिटी :</string>-->
+    <string name="priority">Priority :</string>
+<!--    <string name="availability">स्थिति :</string>-->
+    <string name="availability">Situation :</string>
+<!--    <string name="epic_no">ईपिक नंबर :</string>-->
+    <string name="epic_no">Epic no. :</string>
+<!--    <string name="age1">उम्र :</string>-->
+    <string name="age1">Age :</string>
+<!--    <string name="panchayat_area">पंचायत/क्षेत्र :</string>-->
+    <string name="panchayat_area">Panchayat/Area :</string>
+    <string name="sr_no">Sr no. :</string>
+<!--    <string name="sr_no">स.क्र.</string>-->
+<!--    <string name="from">से</string>-->
+<!--    <string name="date">दिनांक</string>-->
+<!--    <string name="to">तक</string>-->
+<!--    <string name="data_sync">डाटा सिंक्रोनाइज करें</string>-->
+<!--    <string name="polling_booth_details">मतदान केंद्र की जानकारी</string>-->
+<!--    <string name="voting_complete">मतदान पूर्ण :</string>-->
+    <string name="voting_complete">Voting complete :</string>
+    <string name="total_voter">Total voters :</string>
+<!--    <string name="total_voter_h">कुल मतदाता :</string>-->
+<!--    <string name="booth_number">बुथ क्र</string>-->
+    <string name="booth_number">Booth no. :</string>
+<!--    <string name="btn_update">अपडेट करें</string>-->
+    <string name="btn_update">Updateें</string>
+    <string name="voter_sr_no">Voter\'s simple number</string>
+<!--    <string name="voter_srno_h">मतदाता का सरल क्रमांक</string>-->
+
+    <string name="not_sufficient_permissions">Not sufficient permissions \n Goto Settings></string>
+    <string name="permissionss">>Permissions</string>
+    <string name="this_device_is_not_supported">This Device is not supported</string>
+    <string name="problem_connecting_to_the_server">Problem connecting to server,please try later.</string>
+    <string name="session_timeout_redirecting">Session timeout, Redirecting to login</string>
+    <string name="request_timeout_slow_connection">"Request Timeout. Maybe due to slow connection"</string>
+    <string name="press_one_more_time">Press Back again to exit</string>
+    <string name="success_msg">Success</string>
+    <string name="retry_caps">RETRY</string>
+    <string name="exit_caps">EXIT</string>
+    <string name="error">Restful error</string>
+    <string name="api_is_in_maintenance">Api is in maintenance</string>
+    <string name="api_is_expired">Api is in Expired</string>
+    <string name="retry_cap">RETRY</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="success">Success</string>
+
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="alert">Alert</string>
+    <string name="ok">Ok</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="please_wait">Please wait...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="next">Next</string>
+    <string name="settings">Settings</string>
+
+</resources>

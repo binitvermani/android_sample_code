@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeButtonView">
+        <attr name="sb_swipe_bg_color" format="color" />
+        <attr name="sb_thumb_bg_color" format="color" />
+        <attr name="sb_stroke_bg_color" format="color" />
+        <attr name="sb_thumb_image" format="reference" />
+        <attr name="sb_swipe_text" format="string" />
+        <attr name="sb_swipe_text_color" format="color" />
+        <attr name="sb_swipe_animate_text" format="boolean" />
+        <attr name="sb_swipe_text_size" format="dimension" />
+        <attr name="sb_swipe_reverse" format="boolean" />
+        <attr name="sb_swipe_both_direction" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RippleAnimation">
+        <attr name="rippleColor" format="color"></attr>
+        <attr name="rippleType" format="enum">
+            <enum name="fill" value="0"></enum>
+            <enum name="stroke" value="1"></enum>
+        </attr>
+        <attr name="startRadius" format="dimension"></attr>
+        <attr name="endRadius" format="dimension"></attr>
+        <attr name="duration" format="integer"></attr>
+        <attr name="strokeWidth" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlideData">
+        <attr name="slideBackground" format="reference|color" />
+        <attr name="slideSrc" format="reference" />
+        <attr name="slideSrcMargin" format="dimension" />
+        <attr name="slideSrcMarginLeft" format="dimension" />
+        <attr name="slideSrcMarginRight" format="dimension" />
+        <attr name="slideSrcMarginTop" format="dimension" />
+        <attr name="slideSrcMarginBottom" format="dimension" />
+        <attr name="slideText" format="string" />
+        <attr name="slideTextColor" format="color" />
+        <attr name="slideTextSize" format="dimension" />
+        <attr name="slideSuccessPercent" format="integer" />
+        <attr name="slideAutocomplete" format="boolean" />
+    </declare-styleable>
+</resources>

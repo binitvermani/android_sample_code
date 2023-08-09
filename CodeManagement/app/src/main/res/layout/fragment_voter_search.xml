@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="handleClick"
+            type="com.matdata.utils.ClickHandler" />
+
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorDustyWhite">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp">
+
+                <TableRow android:layout_marginTop="4dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/searchname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/name_father_relative_surname"
+                        android:paddingHorizontal="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_11ssp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/searchPanchayat"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/village_panchayat_area"
+                        android:paddingHorizontal="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_11ssp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="4dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/searchBhag"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/part_number"
+                        android:inputType="number"
+                        android:paddingHorizontal="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_11ssp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/searchSrNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/saral_kramank"
+                        android:inputType="number"
+                        android:paddingHorizontal="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_11ssp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false" />
+                </TableRow>
+
+            </TableLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/searchBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginHorizontal="@dimen/_40sdp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/search"
+                    android:textColor="@color/White"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/totalTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:text="Total : 0"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_11ssp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homeRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            tools:itemCount="5"
+            tools:listitem="@layout/adapter_voter_search"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="handleClick"
+            type="com.matdata.utils.ClickHandler" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/please_provide_activation_code_password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:includeFontPadding="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/codeET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toEndOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintTop_toBottomOf="@+id/titleTV"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.8dp"
+            android:background="@color/Black"
+            app:layout_constraintTop_toBottomOf="@id/codeET"
+            app:layout_constraintStart_toStartOf="@id/codeET"
+            app:layout_constraintEnd_toEndOf="@id/codeET"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activateBT"
+            style="@style/activeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            android:onClick="@{(View) -> handleClick.onHandleClick(View)}"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/activate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/codeET"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

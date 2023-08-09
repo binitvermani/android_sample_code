@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:background="@drawable/dialog_round_drawable">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTV"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_bar_blue_round_corner"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/logout"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/msgTV"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:text="@string/are_you_sure_you_want_to_logout"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/msgTV" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/textColor"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@id/view1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            android:background="@color/transparent"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorView"
+            app:layout_constraintEnd_toStartOf="@id/logoutBT"
+            app:layout_constraintStart_toEndOf="@id/cancelBT"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/logout"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAllCaps="false"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/cancelBT"
+            android:background="@color/transparent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

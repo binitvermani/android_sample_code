@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorDustyWhite">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/viewBottom"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/heading2">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="4dp"-->
+<!--                android:layout_marginRight="4dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:text="@string/sr_no"-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtSrNo"-->
+<!--                    android:layout_width="48dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:paddingLeft="4dp"-->
+<!--                    android:text="@string/bhag"-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtBhagSankhya"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtNekayCode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:fontFamily="@font/poppins_semibold"-->
+<!--                    android:paddingLeft="4dp"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Nigam Name"-->
+<!--                    android:textColor="@color/Black"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtnupdate"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_update" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtncontactadd"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_contact_add" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtncall"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_cal" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtnsms"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_sms2" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/btnWattsappSingle"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/wattsappsingle" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtnwattsapp"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/ic_wattsapp_1" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imgbtnmembers"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:background="@drawable/whitebg_rectangle"-->
+<!--                        android:contentDescription="x"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/family" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btnPrint"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:background="@drawable/printer_green"-->
+<!--                        android:contentDescription="@string/back" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btnFamilyPrint"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:background="@drawable/printer_green"-->
+<!--                        android:contentDescription="@string/back" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:text="@string/family_parchi"-->
+<!--                        android:textColor="@color/colorLogoBg"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/indivisual_parchi"-->
+<!--                        android:textColor="@color/colorLogoBg"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btnPrintWH"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:background="@drawable/printer_3"-->
+<!--                        android:contentDescription="@string/back" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btnFamilyPrintWH"-->
+<!--                        android:layout_width="40dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:background="@drawable/printer_3"-->
+<!--                        android:contentDescription="@string/back" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="16dp"-->
+<!--                        android:text="@string/family_parchi"-->
+<!--                        android:textColor="@color/colorLogoBg"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/indivisual_parchi"-->
+<!--                        android:textColor="@color/colorLogoBg"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <TableLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:paddingRight="16dp"-->
+<!--                    android:paddingTop="0dp">-->
+
+<!--                    <TableRow-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/bhag_sankhya"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtBhagXXXXXX"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="8dp" />-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtKhetra"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/panchayat_area"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtName"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/name"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtRelative"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/father_husband"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtAge"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/age_sex"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <AutoCompleteTextView-->
+<!--                                android:id="@+id/txtCast"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_weight="2"-->
+<!--                                android:background="@drawable/edittext_border"-->
+<!--                                android:inputType="textAutoComplete"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:singleLine="true"-->
+<!--                                android:textColor="@color/Black"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <ImageButton-->
+<!--                                android:id="@+id/imgsearchCast"-->
+<!--                                android:layout_width="30dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:background="@drawable/whitebg_rectangle"-->
+<!--                                android:contentDescription="x"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/ic_search" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/cast"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtHouseNo"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/house_no"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtAnubhag"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/address"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageButton-->
+<!--                                android:id="@+id/imgsearchcontact"-->
+<!--                                android:layout_width="30dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:background="@drawable/whitebg_rectangle"-->
+<!--                                android:contentDescription="x"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/ic_call" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/txtMobileNo"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/edittext_border"-->
+<!--                                android:gravity="center_vertical"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:singleLine="true"-->
+<!--                                android:textColor="@color/Black"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/mobile"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageButton-->
+<!--                                android:id="@+id/imgDOB"-->
+<!--                                android:layout_width="30dp"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:background="@drawable/whitebg_rectangle"-->
+<!--                                android:contentDescription="x"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/ic_calendar" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/txtDob"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="30dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@drawable/edittext_border"-->
+<!--                                android:gravity="center_vertical"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:singleLine="true"-->
+<!--                                android:textColor="@color/Black"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/dob_date"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtEpicNumber"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:inputType="textAutoComplete"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/epic_no"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <Spinner-->
+<!--                            android:id="@+id/sptpriority"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/preority"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <Spinner-->
+<!--                            android:id="@+id/sptstatus"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/availability"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+
+<!--                    <TableRow android:layout_marginTop="4dp">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/txtVotingPlace"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="2"-->
+<!--                            android:background="@drawable/edittext_border"-->
+<!--                            android:enabled="false"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:singleLine="false"-->
+<!--                            android:text="शास.बालक पूर्व माध्य. शाला भवन, कक्ष क्र-7, चिंगराजपारा, बिलासपुर"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="14sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:fontFamily="@font/poppins_semibold"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="@string/voting_place"-->
+<!--                            android:textColor="@color/Black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold" />-->
+<!--                    </TableRow>-->
+<!--                </TableLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_below="@+id/llAll"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:background="@color/Black" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_below="@+id/llAll"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/Black" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/heading2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/voters_details"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/viewTop" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewTop"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            app:layout_constraintEnd_toEndOf="0"-->
+<!--            app:layout_constraintHorizontal_bias="0"-->
+<!--            app:layout_constraintStart_toStartOf="0"-->
+<!--            app:layout_constraintTop_toTopOf="0" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewBottom"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:background="@drawable/wave_up"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            app:layout_constraintBottom_toBottomOf="0"-->
+<!--            app:layout_constraintEnd_toEndOf="0"-->
+<!--            app:layout_constraintStart_toStartOf="0" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/view2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="32dp"-->
+<!--            android:background="@drawable/waves_down"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            app:layout_constraintEnd_toEndOf="0"-->
+<!--            app:layout_constraintHorizontal_bias="1"-->
+<!--            app:layout_constraintStart_toStartOf="0"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/viewTop" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="handleClick"
+            type="com.matdata.utils.ClickHandler" />
+
+    </data>
+
+</layout>
